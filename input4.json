@@ -1,0 +1,15 @@
+{
+    "comment": "file for w contains strings that contains the substring ab or b",
+    "states": ["q1", "q2", "q3", "q4", "q5", "q6", "q7"],
+    "alphabet": ["a", "b"],
+    "transitions": [
+        {"current_state": "q1", "input": "epsilon", "next_state": "q2"},  
+        {"current_state": "q1", "input": "epsilon", "next_state": "q6"},  
+        {"current_state": "q2", "input": "a", "next_state": "q3"},
+        {"current_state": "q3", "input": "epsilon", "next_state": "q4"},
+        {"current_state": "q4", "input": "b", "next_state": "q5"},
+        {"current_state": "q6", "input": "b", "next_state": "q7"}
+    ],
+    "start-state": "q1",
+    "accept-state": ["q5", "q7"]
+}

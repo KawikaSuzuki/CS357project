@@ -1,0 +1,10 @@
+{
+  "comment": "DFA with Missing Transitions",
+  "states": ["q1", "q2"],
+  "alphabet": ["a", "b"],
+  "transitions": [
+    {"current_state": "q1", "input": "b", "next_state": "q2"}
+  ],
+  "start-state": "q1",
+  "accept-state": ["q2"]
+}

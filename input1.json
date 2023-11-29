@@ -1,0 +1,19 @@
+{
+    "comment":"file for w contains strings that start with b and end with aa",
+    "states":["q1", "q2", "q3", "q4", "q5"],
+    "alphabet":["a", "b"],
+    "transitions":[
+        {"current_state":"q1", "input":"a", "next_state":"q5"},
+        {"current_Astate":"q1", "input":"b", "next_state":"q2"},
+        {"current_state":"q2", "input":"a", "next_state":"q3"},
+        {"current_state":"q2", "input":"b", "next_state":"q2"},
+        {"current_state":"q3", "input":"a", "next_state":"q4"},
+        {"current_state":"q3", "input":"b", "next_state":"q2"},
+        {"current_state":"q4", "input":"a", "next_state":"q4"},
+        {"current_state":"q4", "input":"b", "next_state":"q2"},
+        {"current_state":"q5", "input":"a", "next_state":"q5"},
+        {"current_state":"q5", "input":"b", "next_state":"q5"}
+    ],
+    "start-state":"q1",
+    "accept-state":["q4"]
+}
